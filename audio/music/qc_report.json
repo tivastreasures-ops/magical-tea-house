@@ -1,0 +1,856 @@
+{
+  "tracks": {
+    "R01": {
+      "integrated_lufs": -17.9,
+      "lra": 5.5,
+      "momentary_max": -9.8,
+      "spike_lu_above_integrated": 8.1,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 540,
+      "tempo_est_bpm": 71.8,
+      "key_est": "A major",
+      "key_conf": 0.91,
+      "loop_similarity": 0.585,
+      "loop_lag_s": 5.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W01",
+        0.94
+      ]
+    },
+    "R02": {
+      "integrated_lufs": -18.1,
+      "lra": 3.8,
+      "momentary_max": -14.9,
+      "spike_lu_above_integrated": 3.2,
+      "hf_share_above_6k_pct": 0.01,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 946,
+      "tempo_est_bpm": 129.2,
+      "key_est": "E major",
+      "key_conf": 0.94,
+      "loop_similarity": 0.838,
+      "loop_lag_s": 3.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S01",
+        0.661
+      ]
+    },
+    "R03": {
+      "integrated_lufs": -17.9,
+      "lra": 4.2,
+      "momentary_max": -13.2,
+      "spike_lu_above_integrated": 4.7,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 765,
+      "tempo_est_bpm": 64.6,
+      "key_est": "A major",
+      "key_conf": 0.92,
+      "loop_similarity": 0.637,
+      "loop_lag_s": 11.2,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G05",
+        0.663
+      ]
+    },
+    "R04": {
+      "integrated_lufs": -17.9,
+      "lra": 7.8,
+      "momentary_max": -11.5,
+      "spike_lu_above_integrated": 6.4,
+      "hf_share_above_6k_pct": 0.04,
+      "hf_share_above_10k_pct": 0.006,
+      "spectral_centroid_hz": 1011,
+      "tempo_est_bpm": 58.7,
+      "key_est": "Eb major",
+      "key_conf": 0.92,
+      "loop_similarity": 0.746,
+      "loop_lag_s": 8.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G10",
+        0.803
+      ]
+    },
+    "R05": {
+      "integrated_lufs": -18.0,
+      "lra": 4.8,
+      "momentary_max": -14.5,
+      "spike_lu_above_integrated": 3.5,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 633,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D major",
+      "key_conf": 0.84,
+      "loop_similarity": 0.867,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W01",
+        0.881
+      ]
+    },
+    "R06": {
+      "integrated_lufs": -18.0,
+      "lra": 7.2,
+      "momentary_max": -12.2,
+      "spike_lu_above_integrated": 5.8,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 752,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D major",
+      "key_conf": 0.79,
+      "loop_similarity": 0.77,
+      "loop_lag_s": 3.3,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W03",
+        0.376
+      ]
+    },
+    "R07": {
+      "integrated_lufs": -18.0,
+      "lra": 7.2,
+      "momentary_max": -11.6,
+      "spike_lu_above_integrated": 6.4,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 855,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D minor",
+      "key_conf": 0.8,
+      "loop_similarity": 0.837,
+      "loop_lag_s": 6.9,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G06",
+        0.426
+      ]
+    },
+    "R08": {
+      "integrated_lufs": -17.9,
+      "lra": 5.2,
+      "momentary_max": -12.8,
+      "spike_lu_above_integrated": 5.1,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 889,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D minor",
+      "key_conf": 0.74,
+      "loop_similarity": 0.591,
+      "loop_lag_s": 2.5,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S03",
+        0.691
+      ]
+    },
+    "R09": {
+      "integrated_lufs": -18.0,
+      "lra": 6.0,
+      "momentary_max": -14.1,
+      "spike_lu_above_integrated": 3.9,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 799,
+      "tempo_est_bpm": 71.8,
+      "key_est": "C major",
+      "key_conf": 0.95,
+      "loop_similarity": 0.711,
+      "loop_lag_s": 2.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S06",
+        0.567
+      ]
+    },
+    "R10": {
+      "integrated_lufs": -18.0,
+      "lra": 2.8,
+      "momentary_max": -14.5,
+      "spike_lu_above_integrated": 3.5,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 726,
+      "tempo_est_bpm": 129.2,
+      "key_est": "A minor",
+      "key_conf": 0.84,
+      "loop_similarity": 0.694,
+      "loop_lag_s": 5.3,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W02",
+        0.607
+      ]
+    },
+    "G01": {
+      "integrated_lufs": -18.0,
+      "lra": 5.6,
+      "momentary_max": -13.2,
+      "spike_lu_above_integrated": 4.8,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 732,
+      "tempo_est_bpm": 58.7,
+      "key_est": "C major",
+      "key_conf": 0.89,
+      "loop_similarity": 0.673,
+      "loop_lag_s": 8.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G04",
+        0.772
+      ]
+    },
+    "G02": {
+      "integrated_lufs": -18.0,
+      "lra": 6.9,
+      "momentary_max": -12.1,
+      "spike_lu_above_integrated": 5.9,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 718,
+      "tempo_est_bpm": 71.8,
+      "key_est": "G minor",
+      "key_conf": 0.82,
+      "loop_similarity": 0.59,
+      "loop_lag_s": 11.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G01",
+        0.66
+      ]
+    },
+    "G03": {
+      "integrated_lufs": -18.0,
+      "lra": 4.9,
+      "momentary_max": -13.9,
+      "spike_lu_above_integrated": 4.1,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 848,
+      "tempo_est_bpm": 71.8,
+      "key_est": "A major",
+      "key_conf": 0.95,
+      "loop_similarity": 0.659,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R03",
+        0.412
+      ]
+    },
+    "G04": {
+      "integrated_lufs": -18.0,
+      "lra": 5.6,
+      "momentary_max": -12.4,
+      "spike_lu_above_integrated": 5.6,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 662,
+      "tempo_est_bpm": 71.8,
+      "key_est": "E minor",
+      "key_conf": 0.75,
+      "loop_similarity": 0.734,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W01",
+        0.79
+      ]
+    },
+    "G05": {
+      "integrated_lufs": -18.0,
+      "lra": 6.9,
+      "momentary_max": -12.8,
+      "spike_lu_above_integrated": 5.2,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 666,
+      "tempo_est_bpm": 129.2,
+      "key_est": "A major",
+      "key_conf": 0.9,
+      "loop_similarity": 0.631,
+      "loop_lag_s": 3.5,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R01",
+        0.908
+      ]
+    },
+    "G06": {
+      "integrated_lufs": -18.0,
+      "lra": 4.5,
+      "momentary_max": -13.3,
+      "spike_lu_above_integrated": 4.7,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 779,
+      "tempo_est_bpm": 129.2,
+      "key_est": "D minor",
+      "key_conf": 0.88,
+      "loop_similarity": 0.74,
+      "loop_lag_s": 7.1,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W05",
+        0.638
+      ]
+    },
+    "G07": {
+      "integrated_lufs": -18.0,
+      "lra": 8.3,
+      "momentary_max": -11.9,
+      "spike_lu_above_integrated": 6.1,
+      "hf_share_above_6k_pct": 0.01,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 1111,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D major",
+      "key_conf": 0.78,
+      "loop_similarity": 0.514,
+      "loop_lag_s": 3.3,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S02",
+        0.781
+      ]
+    },
+    "G08": {
+      "integrated_lufs": -18.0,
+      "lra": 5.7,
+      "momentary_max": -14.0,
+      "spike_lu_above_integrated": 4.0,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 785,
+      "tempo_est_bpm": 71.8,
+      "key_est": "Ab major",
+      "key_conf": 0.92,
+      "loop_similarity": 0.782,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G02",
+        0.29
+      ]
+    },
+    "G09": {
+      "integrated_lufs": -18.0,
+      "lra": 5.6,
+      "momentary_max": -13.1,
+      "spike_lu_above_integrated": 4.9,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 877,
+      "tempo_est_bpm": 58.7,
+      "key_est": "E minor",
+      "key_conf": 0.91,
+      "loop_similarity": 0.663,
+      "loop_lag_s": 8.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S04",
+        0.628
+      ]
+    },
+    "G10": {
+      "integrated_lufs": -17.9,
+      "lra": 3.5,
+      "momentary_max": -13.9,
+      "spike_lu_above_integrated": 4.0,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 907,
+      "tempo_est_bpm": 80.7,
+      "key_est": "Bb major",
+      "key_conf": 0.72,
+      "loop_similarity": 0.763,
+      "loop_lag_s": 8.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R04",
+        0.803
+      ]
+    },
+    "S01": {
+      "integrated_lufs": -18.0,
+      "lra": 4.8,
+      "momentary_max": -13.7,
+      "spike_lu_above_integrated": 4.3,
+      "hf_share_above_6k_pct": 0.02,
+      "hf_share_above_10k_pct": 0.001,
+      "spectral_centroid_hz": 1220,
+      "tempo_est_bpm": 71.8,
+      "key_est": "Ab minor",
+      "key_conf": 0.69,
+      "loop_similarity": 0.679,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S10",
+        0.825
+      ]
+    },
+    "S02": {
+      "integrated_lufs": -18.0,
+      "lra": 5.2,
+      "momentary_max": -12.0,
+      "spike_lu_above_integrated": 6.0,
+      "hf_share_above_6k_pct": 0.02,
+      "hf_share_above_10k_pct": 0.001,
+      "spectral_centroid_hz": 1101,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D major",
+      "key_conf": 0.81,
+      "loop_similarity": 0.527,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S10",
+        0.879
+      ]
+    },
+    "S03": {
+      "integrated_lufs": -18.0,
+      "lra": 8.5,
+      "momentary_max": -12.9,
+      "spike_lu_above_integrated": 5.1,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 903,
+      "tempo_est_bpm": 64.6,
+      "key_est": "F major",
+      "key_conf": 0.94,
+      "loop_similarity": 0.709,
+      "loop_lag_s": 2.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R08",
+        0.691
+      ]
+    },
+    "S04": {
+      "integrated_lufs": -18.1,
+      "lra": 1.9,
+      "momentary_max": -14.8,
+      "spike_lu_above_integrated": 3.3,
+      "hf_share_above_6k_pct": 0.01,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 907,
+      "tempo_est_bpm": 71.8,
+      "key_est": "C major",
+      "key_conf": 0.92,
+      "loop_similarity": 0.785,
+      "loop_lag_s": 10.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W10",
+        0.684
+      ]
+    },
+    "S05": {
+      "integrated_lufs": -18.0,
+      "lra": 3.0,
+      "momentary_max": -12.5,
+      "spike_lu_above_integrated": 5.5,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 749,
+      "tempo_est_bpm": 64.6,
+      "key_est": "D major",
+      "key_conf": 0.89,
+      "loop_similarity": 0.713,
+      "loop_lag_s": 2.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W01",
+        0.71
+      ]
+    },
+    "S06": {
+      "integrated_lufs": -18.0,
+      "lra": 4.2,
+      "momentary_max": -13.7,
+      "spike_lu_above_integrated": 4.3,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 813,
+      "tempo_est_bpm": 64.6,
+      "key_est": "E minor",
+      "key_conf": 0.87,
+      "loop_similarity": 0.828,
+      "loop_lag_s": 7.5,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R09",
+        0.567
+      ]
+    },
+    "S07": {
+      "integrated_lufs": -17.9,
+      "lra": 7.1,
+      "momentary_max": -11.4,
+      "spike_lu_above_integrated": 6.5,
+      "hf_share_above_6k_pct": 0.01,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 976,
+      "tempo_est_bpm": 64.6,
+      "key_est": "D minor",
+      "key_conf": 0.72,
+      "loop_similarity": 0.652,
+      "loop_lag_s": 7.2,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S02",
+        0.677
+      ]
+    },
+    "S08": {
+      "integrated_lufs": -18.0,
+      "lra": 9.2,
+      "momentary_max": -12.0,
+      "spike_lu_above_integrated": 6.0,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 784,
+      "tempo_est_bpm": 129.2,
+      "key_est": "A minor",
+      "key_conf": 0.88,
+      "loop_similarity": 0.409,
+      "loop_lag_s": 7.1,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G04",
+        0.632
+      ]
+    },
+    "S09": {
+      "integrated_lufs": -18.0,
+      "lra": 4.6,
+      "momentary_max": -13.1,
+      "spike_lu_above_integrated": 4.9,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 819,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D minor",
+      "key_conf": 0.87,
+      "loop_similarity": 0.667,
+      "loop_lag_s": 2.5,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W07",
+        0.371
+      ]
+    },
+    "S10": {
+      "integrated_lufs": -18.0,
+      "lra": 7.2,
+      "momentary_max": -11.8,
+      "spike_lu_above_integrated": 6.2,
+      "hf_share_above_6k_pct": 0.01,
+      "hf_share_above_10k_pct": 0.001,
+      "spectral_centroid_hz": 962,
+      "tempo_est_bpm": 64.6,
+      "key_est": "A major",
+      "key_conf": 0.87,
+      "loop_similarity": 0.762,
+      "loop_lag_s": 2.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S02",
+        0.879
+      ]
+    },
+    "W01": {
+      "integrated_lufs": -17.9,
+      "lra": 5.4,
+      "momentary_max": -11.1,
+      "spike_lu_above_integrated": 6.8,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 480,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D major",
+      "key_conf": 0.73,
+      "loop_similarity": 0.828,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R01",
+        0.94
+      ]
+    },
+    "W02": {
+      "integrated_lufs": -18.0,
+      "lra": 5.6,
+      "momentary_max": -12.5,
+      "spike_lu_above_integrated": 5.5,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 683,
+      "tempo_est_bpm": 71.8,
+      "key_est": "A major",
+      "key_conf": 0.71,
+      "loop_similarity": 0.561,
+      "loop_lag_s": 10.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R10",
+        0.607
+      ]
+    },
+    "W03": {
+      "integrated_lufs": -18.0,
+      "lra": 3.1,
+      "momentary_max": -12.4,
+      "spike_lu_above_integrated": 5.6,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 533,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D major",
+      "key_conf": 0.77,
+      "loop_similarity": 0.511,
+      "loop_lag_s": 7.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R01",
+        0.877
+      ]
+    },
+    "W04": {
+      "integrated_lufs": -18.0,
+      "lra": 2.8,
+      "momentary_max": -15.0,
+      "spike_lu_above_integrated": 3.0,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 745,
+      "tempo_est_bpm": 71.8,
+      "key_est": "E major",
+      "key_conf": 0.87,
+      "loop_similarity": 0.819,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R03",
+        0.479
+      ]
+    },
+    "W05": {
+      "integrated_lufs": -18.0,
+      "lra": 6.1,
+      "momentary_max": -9.4,
+      "spike_lu_above_integrated": 8.6,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 579,
+      "tempo_est_bpm": 71.8,
+      "key_est": "D minor",
+      "key_conf": 0.81,
+      "loop_similarity": 0.799,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "W01",
+        0.818
+      ]
+    },
+    "W06": {
+      "integrated_lufs": -17.9,
+      "lra": 7.5,
+      "momentary_max": -14.1,
+      "spike_lu_above_integrated": 3.8,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 740,
+      "tempo_est_bpm": 64.6,
+      "key_est": "C minor",
+      "key_conf": 0.92,
+      "loop_similarity": 0.572,
+      "loop_lag_s": 2.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "S03",
+        0.484
+      ]
+    },
+    "W07": {
+      "integrated_lufs": -18.0,
+      "lra": 6.7,
+      "momentary_max": -9.9,
+      "spike_lu_above_integrated": 8.1,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 753,
+      "tempo_est_bpm": 129.2,
+      "key_est": "D minor",
+      "key_conf": 0.82,
+      "loop_similarity": 0.799,
+      "loop_lag_s": 3.5,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G06",
+        0.514
+      ]
+    },
+    "W08": {
+      "integrated_lufs": -18.0,
+      "lra": 4.5,
+      "momentary_max": -12.0,
+      "spike_lu_above_integrated": 6.0,
+      "hf_share_above_6k_pct": 0.0,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 619,
+      "tempo_est_bpm": 71.8,
+      "key_est": "A major",
+      "key_conf": 0.88,
+      "loop_similarity": 0.744,
+      "loop_lag_s": 6.7,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R01",
+        0.918
+      ]
+    },
+    "W09": {
+      "integrated_lufs": -18.0,
+      "lra": 6.1,
+      "momentary_max": -12.1,
+      "spike_lu_above_integrated": 5.9,
+      "hf_share_above_6k_pct": 0.01,
+      "hf_share_above_10k_pct": 0.002,
+      "spectral_centroid_hz": 729,
+      "tempo_est_bpm": 64.6,
+      "key_est": "A major",
+      "key_conf": 0.87,
+      "loop_similarity": 0.574,
+      "loop_lag_s": 2.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "R01",
+        0.403
+      ]
+    },
+    "W10": {
+      "integrated_lufs": -17.9,
+      "lra": 11.7,
+      "momentary_max": -9.9,
+      "spike_lu_above_integrated": 8.0,
+      "hf_share_above_6k_pct": 0.01,
+      "hf_share_above_10k_pct": 0.0,
+      "spectral_centroid_hz": 904,
+      "tempo_est_bpm": 80.7,
+      "key_est": "C minor",
+      "key_conf": 0.9,
+      "loop_similarity": 0.615,
+      "loop_lag_s": 6.0,
+      "mid_track_silences": [],
+      "flags": [],
+      "most_similar": [
+        "G10",
+        0.779
+      ]
+    }
+  },
+  "most_similar_pairs": [
+    {
+      "a": "R01",
+      "b": "W01",
+      "sim": 0.94
+    },
+    {
+      "a": "R01",
+      "b": "W08",
+      "sim": 0.918
+    },
+    {
+      "a": "G05",
+      "b": "R01",
+      "sim": 0.908
+    },
+    {
+      "a": "G05",
+      "b": "W08",
+      "sim": 0.901
+    },
+    {
+      "a": "R05",
+      "b": "W01",
+      "sim": 0.881
+    },
+    {
+      "a": "R01",
+      "b": "R05",
+      "sim": 0.879
+    },
+    {
+      "a": "S02",
+      "b": "S10",
+      "sim": 0.879
+    },
+    {
+      "a": "R01",
+      "b": "W03",
+      "sim": 0.877
+    },
+    {
+      "a": "W01",
+      "b": "W08",
+      "sim": 0.847
+    },
+    {
+      "a": "G05",
+      "b": "W01",
+      "sim": 0.829
+    }
+  ]
+}
