@@ -1,0 +1,52 @@
+{
+  "note": "MTT asset provenance manifest. All entries are CONCEPT / REFERENCE images (2D). None are validated 3D meshes. No Meshy conversion or credit spend has occurred. Director approval is required before any 3D conversion gate.",
+  "convention": "MTT_[family]_[asset]_[view]_v##",
+  "assets": [
+    {
+      "file": "MTT_character_botanist_turnaround_v01.jpg",
+      "family": "character", "asset": "botanist", "view": "turnaround", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Cozy Tea drive, reported)",
+      "status": "concept turnaround — REUSE CANDIDATE for human visitor; casting not approved",
+      "risks": ["4-view sheet, not isolated single-object reference", "geometry inspection pending"]
+    },
+    {
+      "file": "MTT_visitor_lanternspirit_turnaround_v01.jpg",
+      "family": "visitor", "asset": "lantern-spirit", "view": "turnaround", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)",
+      "status": "concept turnaround — REUSE CANDIDATE for magical being visitor; casting not approved",
+      "risks": ["glowing lantern requires emissive + point light budget", "turnaround consistency unverified"]
+    },
+    {
+      "file": "MTT_familiar_cat_standalone_v01.jpg", "family": "familiar", "asset": "cat", "view": "standalone", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)", "status": "concept standalone", "risks": ["pose is seated; rig unknown"]
+    },
+    {
+      "file": "MTT_familiar_fox_standalone_v01.jpg", "family": "familiar", "asset": "fox", "view": "standalone", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)", "status": "concept standalone", "risks": ["tail geometry complexity"]
+    },
+    {
+      "file": "MTT_familiar_dog_standalone_v01.jpg", "family": "familiar", "asset": "dog", "view": "standalone", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)", "status": "concept standalone — turnaround reported approved, standalone status pending per brief", "risks": ["confirm current file status before implementation"]
+    },
+    {
+      "file": "MTT_familiar_bird_standalone_v01.jpg", "family": "familiar", "asset": "bird", "view": "standalone", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)", "status": "concept standalone — brief lists bird references as 'to produce'; this image predates that note", "risks": ["reconcile with production notes"]
+    },
+    {
+      "file": "MTT_reference_masterboard_v01.jpg", "family": "reference", "asset": "master-board", "view": "board", "version": "v01",
+      "provenance": "Director upload, Nov 2026", "status": "master reference board — mood only, not modelable geometry", "risks": ["do not infer asset completion from this image"]
+    },
+    {
+      "file": "MTT_furniture_counter_concept_v01.jpg", "family": "furniture", "asset": "counter", "view": "standalone", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)", "status": "concept render of curved service counter", "risks": ["carved relief detail too dense for MVP poly budget; simplify"]
+    },
+    {
+      "file": "MTT_prop_quietnook_set_v01.jpg", "family": "prop", "asset": "quiet-nook-set", "view": "set-sheet", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)", "status": "concept prop sheet (cushion, tray, journal, rug)", "risks": ["individual isolation needed before modeling"]
+    },
+    {
+      "file": "MTT_prop_decor_set_v01.jpg", "family": "prop", "asset": "decor-set", "view": "set-sheet", "version": "v01",
+      "provenance": "Director upload, Nov 2026 (Gemini generation)", "status": "concept prop sheet (lights, botanical, storage, textiles, treasures)", "risks": ["MVP uses primitive stand-ins"]
+    }
+  ]
+}

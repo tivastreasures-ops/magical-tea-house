@@ -1,1 +1,30 @@
-audio/music/finals/*.wav
+# dependencies
+node_modules
+.pnp
+.pnp.*
+
+# next.js
+.next
+out
+next-env.d.ts
+
+# production
+build
+
+# misc
+.DS_Store
+*.pem
+*.log
+dev.log
+server.log
+
+# env — never commit secrets
+.env
+.env.*
+!.env.example
+
+# typescript
+*.tsbuildinfo
+
+# music pipeline intermediates (rebuilt by tools/music/fetch_and_master.py)
+*.wav
