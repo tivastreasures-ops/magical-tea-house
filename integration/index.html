@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TeaAudioEngine — integration demo</title>
+<style>
+  :root {
+    --bg: #241b17; --panel: #2f241e; --ink: #f3e9dc; --dim: #b9a894;
+    --accent: #e8b84b; --line: #4a3a2f; --good: #9ec98f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 1.25rem; background: var(--bg); color: var(--ink);
+    font: 16px/1.5 system-ui, sans-serif;
+  }
+  h1 { font-size: 1.35rem; margin: 0 0 .25rem; }
+  .sub { color: var(--dim); margin: 0 0 1rem; font-size: .92rem; }
+  .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+  section {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 1rem 1.1rem;
+  }
+  h2 { font-size: 1rem; margin: 0 0 .6rem; color: var(--accent); }
+  label { display: block; margin: .45rem 0 .15rem; font-size: .9rem; }
+  .row { display: flex; align-items: center; gap: .6rem; margin: .3rem 0; flex-wrap: wrap; }
+  input[type=range] { flex: 1; min-width: 120px; }
+  select, button {
+    font: inherit; background: #3a2d25; color: var(--ink);
+    border: 1px solid var(--line); border-radius: 8px; padding: .45rem .8rem;
+    min-height: 44px; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button[aria-pressed="true"] { background: var(--accent); color: #241b17; font-weight: 600; }
+  .val { color: var(--dim); font-variant-numeric: tabular-nums; min-width: 3.2em; text-align: right; }
+  #nowplaying { min-height: 1.4em; color: var(--good); font-size: .95rem; }
+  #captions {
+    margin-top: 1rem; background: #1b140f; border: 1px solid var(--line);
+    border-radius: 10px; padding: .7rem .9rem; min-height: 2.4em; font-size: .95rem;
+  }
+  .sfxgrid { display: flex; flex-wrap: wrap; gap: .4rem; }
+  .sfxgrid button { padding: .35rem .6rem; min-height: 40px; font-size: .85rem; }
+  .ph::after { content: " ⟨placeholder⟩"; color: var(--dim); font-size: .75rem; }
+  #unlock { font-size: 1.05rem; padding: .7rem 1.2rem; }
+  .mutedlbl { color: var(--dim); font-size: .85rem; }
+</style>
+</head>
+<body>
+<h1>TeaAudioEngine — integration demo</h1>
+<p class="sub">
+  Reference wiring for <code>docs/audio-playback-spec.md</code>. Music: this repo's
+  <code>audio/music/finals/</code> (wired as <em>mastered_pending_listen_review</em> — human
+  listen-review still pending). Weather/ambience/SFX are synthesised placeholders.
+</p>
+
+<section style="margin-bottom:1rem">
+  <button id="unlock">▶ Start audio (user gesture required)</button>
+  <span id="nowplaying" role="status"></span>
+</section>
+
+<div class="grid">
+  <section>
+    <h2>Music</h2>
+    <label for="playlist">Playlist</label>
+    <div class="row">
+      <select id="playlist"></select>
+      <button id="prev">⏮</button>
+      <button id="next">⏭</button>
+    </div>
+    <div class="row">
+      <button id="shuffle" aria-pressed="false">Shuffle</button>
+      <button id="musicon" aria-pressed="true">Music on</button>
+    </div>
+    <label for="xf">Crossfade <span class="val" id="xfval">5.0 s</span></label>
+    <input type="range" id="xf" min="0" max="8" step="0.5" value="5">
+  </section>
+
+  <section>
+    <h2>Mixer</h2>
+    <div id="mixer"></div>
+  </section>
+
+  <section>
+    <h2>Atmosphere (independent of music)</h2>
+    <div class="row" role="group" aria-label="Weather">
+      <button data-weather="none" aria-pressed="true">No weather</button>
+      <button data-weather="rain" aria-pressed="false">Rain</button>
+      <button data-weather="snow" aria-pressed="false">Snow</button>
+    </div>
+    <div class="row">
+      <button id="ambience" aria-pressed="false">Interior ambience</button>
+    </div>
+    <p class="mutedlbl">Changing weather never switches, restarts or ducks the music.</p>
+  </section>
+
+  <section>
+    <h2>Functional cues (placeholder SFX)</h2>
+    <div class="sfxgrid" id="sfxgrid"></div>
+  </section>
+</div>
+
+<div id="captions" aria-live="polite"><span class="mutedlbl">Functional-cue captions appear here (visual equivalent of every SFX).</span></div>
+
+<script type="module">
+  import { TeaAudioEngine } from "./tea-audio-engine.js";
+
+  const $ = (s) => document.querySelector(s);
+
+  const engine = new TeaAudioEngine({
+    manifest: await (await fetch("../audio/music/manifest.json")).json(),
+    assetBase: "../audio/music",
+    allowedStatuses: ["approved", "mastered_pending_listen_review"],
+    storageKey: "mth.integration.demo.v1",
+    onCaption: (text) => { $("#captions").textContent = text; },
+    onNowPlaying: (track, playlistId) => {
+      $("#nowplaying").textContent = `♪ ${track.title} — ${playlistId}`;
+    },
+  });
+  await engine.init();
+
+  // playlist select
+  const sel = $("#playlist");
+  for (const name of engine.playlistNames()) {
+    const o = document.createElement("option");
+    o.value = name; o.textContent = name;
+    sel.append(o);
+  }
+  if (engine.playlistId) sel.value = engine.playlistId;
+  sel.addEventListener("change", () => engine.setPlaylist(sel.value));
+
+  // mixer sliders + mutes
+  const mixer = $("#mixer");
+  for (const bus of ["master", "music", "weather", "ambience", "fx"]) {
+    const row = document.createElement("div");
+    row.innerHTML = `
+      <label for="vol-${bus}">${bus} <span class="val" id="val-${bus}">${Math.round(engine.levels[bus] * 100)}%</span></label>
+      <div class="row">
+        <input type="range" id="vol-${bus}" min="0" max="1" step="0.01" value="${engine.levels[bus]}">
+        <button id="mute-${bus}" aria-pressed="${engine.muted[bus]}">Mute</button>
+      </div>`;
+    mixer.append(row);
+    row.querySelector(`#vol-${bus}`).addEventListener("input", (e) => {
+      engine.setLevel(bus, Number(e.target.value));
+      $(`#val-${bus}`).textContent = `${Math.round(engine.levels[bus] * 100)}%`;
+    });
+    row.querySelector(`#mute-${bus}`).addEventListener("click", (e) => {
+      const on = !engine.muted[bus];
+      engine.setMuted(bus, on);
+      e.target.setAttribute("aria-pressed", String(on));
+    });
+  }
+
+  // transport
+  $("#shuffle").setAttribute("aria-pressed", String(engine.shuffle));
+  $("#shuffle").addEventListener("click", (e) => {
+    engine.setShuffle(!engine.shuffle);
+    e.target.setAttribute("aria-pressed", String(engine.shuffle));
+  });
+  $("#musicon").setAttribute("aria-pressed", String(engine.musicOn));
+  $("#musicon").addEventListener("click", (e) => {
+    engine.setMusicOn(!engine.musicOn);
+    e.target.setAttribute("aria-pressed", String(engine.musicOn));
+  });
+  $("#next").addEventListener("click", () => engine.nextTrack());
+  $("#prev").addEventListener("click", () => engine.prevTrack());
+  const xf = $("#xf");
+  xf.value = String(engine.crossfade);
+  $("#xfval").textContent = `${engine.crossfade.toFixed(1)} s`;
+  xf.addEventListener("input", () => {
+    engine.setCrossfade(Number(xf.value));
+    $("#xfval").textContent = `${engine.crossfade.toFixed(1)} s`;
+  });
+
+  // weather / ambience
+  document.querySelectorAll("[data-weather]").forEach((b) => {
+    b.setAttribute("aria-pressed", String(engine.weatherMode === b.dataset.weather));
+    b.addEventListener("click", () => {
+      engine.setWeather(b.dataset.weather);
+      document.querySelectorAll("[data-weather]").forEach((x) =>
+        x.setAttribute("aria-pressed", String(x === b)));
+    });
+  });
+  $("#ambience").setAttribute("aria-pressed", String(engine.ambienceOn));
+  $("#ambience").addEventListener("click", (e) => {
+    engine.setAmbience(!engine.ambienceOn);
+    e.target.setAttribute("aria-pressed", String(engine.ambienceOn));
+  });
+
+  // sfx grid
+  const grid = $("#sfxgrid");
+  for (const [id, cue] of Object.entries(engine.sfxLibrary())) {
+    const b = document.createElement("button");
+    b.textContent = cue.label;
+    if (cue.placeholder) b.classList.add("ph");
+    b.addEventListener("click", () => engine.playSfx(id));
+    grid.append(b);
+  }
+
+  // unlock (autoplay policy)
+  $("#unlock").addEventListener("click", async () => {
+    await engine.unlock();
+    $("#unlock").disabled = true;
+    $("#unlock").textContent = "Audio running";
+  });
+</script>
+</body>
+</html>
